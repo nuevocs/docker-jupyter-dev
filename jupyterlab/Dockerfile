@@ -28,19 +28,19 @@ RUN python3 -m pip install --upgrade pip \
 
 # Default pip libraries you need
 RUN pip3 install --no-cache-dir \
-    numpy \
-    pandas \
-    scipy \
-    scikit-learn \
-    pycaret \
-    matplotlib \
-    seaborn \
-    plotly \
-    requests \
-    beautifulsoup4 \
-    Pillow \
-    bokeh \
-    widgetsnbextension
+    numpy
+#    pandas \
+#    scipy \
+#    scikit-learn \
+#    pycaret \
+#    matplotlib \
+#    seaborn \
+#    plotly \
+#    requests \
+#    beautifulsoup4 \
+#    Pillow \
+#    bokeh \
+#    widgetsnbextension
 
 # Additional packages
 #RUN pip install --no-cache-dir \
