@@ -15,7 +15,7 @@ ENV TZ=Asia/Tokyo
 
 # Regarding Jupyterlab extensions
 RUN python3 -m pip install --upgrade pip \
-&&  pip install --no-cache-dir \
+&&  pip3 install --no-cache-dir \
     black \
     jupyterlab \
     jupyterlab_code_formatter \
@@ -27,7 +27,7 @@ RUN python3 -m pip install --upgrade pip \
 
 
 # Default pip libraries you need
-RUN pip install --no-cache-dir \
+RUN pip3 install --no-cache-dir \
     numpy \
     pandas \
     scipy \
@@ -40,17 +40,17 @@ RUN pip install --no-cache-dir \
     beautifulsoup4 \
     Pillow \
     bokeh \
-    widgetsnbextension \
+    widgetsnbextension
 
 # Additional packages
-RUN pip install --no-cache-dir \
-    pydeps \
-    graphviz \
-    pandas_profiling \
-    shap \
-    umap \
-    xgboost \
-    lightgbm
+#RUN pip install --no-cache-dir \
+#    pydeps \
+#    graphviz \
+#    pandas_profiling \
+#    shap \
+#    umap \
+#    xgboost \
+#    lightgbm
 
 # Furthermore dependencies
 COPY ./requirements.txt /requirements.txt
