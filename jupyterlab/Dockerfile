@@ -14,6 +14,7 @@ ENV TZ=Asia/Tokyo
 
 
 # Install nodejs
+# https://github.com/nodesource/distributions
 RUN curl -fsSL https://deb.nodesource.com/setup_19.x | bash - &&\
 apt install -y nodejs
 
@@ -28,8 +29,9 @@ RUN python3 -m pip install --upgrade pip \
     lckr-jupyterlab-variableinspector \
     jupyterlab_widgets \
     ipywidgets \
-    import-ipynb
-
+    import-ipynb \
+    jupyterlab-system-monitor \
+    jupyterlab_tabnine \
 
 # Default pip libraries you need
 RUN pip3 install --no-cache-dir \
@@ -60,3 +62,9 @@ RUN pip3 install --no-cache-dir \
 # Furthermore dependencies
 COPY ./requirements.txt /requirements.txt
 RUN pip3 install -r /requirements.txt
+
+
+
+RUN jupyter labextension install \
+    @jupyterlab/toc \
+    @yeebc/jupyterlab_neon_theme
