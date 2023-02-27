@@ -14,8 +14,8 @@ ENV TZ=Asia/Tokyo
 
 
 # Install nodejs
-RUN curl -fsSL https://deb.nodesource.com/setup_19.x | -E bash - \
-&&  apt install -y nodejs
+RUN curl -fsSL https://deb.nodesource.com/setup_19.x | bash - &&\
+apt install -y nodejs
 
 
 # Regarding Jupyterlab extensions
