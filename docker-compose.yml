@@ -18,8 +18,8 @@ services:
     ports:
       - 18888:8888
     volumes:
-      - ./jupyterlab/config:/root/.jupyter
-      - ./workspace:/workspace
+      - /docker/docjup/jupyterlab/config:/root/.jupyter
+      - /docker/docjup/workspace:/workspace
 
 networks:
   nginxproxymanager_default:

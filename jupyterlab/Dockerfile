@@ -28,15 +28,15 @@ RUN python3 -m pip install --upgrade pip \
 
 # Default pip libraries you need
 RUN pip3 install --no-cache-dir \
-    numpy
-#    pandas \
+    numpy \
+    pandas \
+    scikit-learn \
+    matplotlib \
+    seaborn \
+    plotly \
+    requests
 #    scipy \
-#    scikit-learn \
 #    pycaret \
-#    matplotlib \
-#    seaborn \
-#    plotly \
-#    requests \
 #    beautifulsoup4 \
 #    Pillow \
 #    bokeh \
@@ -54,4 +54,4 @@ RUN pip3 install --no-cache-dir \
 
 # Furthermore dependencies
 COPY ./requirements.txt /requirements.txt
-RUN pip install -r /requirements.txt
+RUN pip3 install -r /requirements.txt
