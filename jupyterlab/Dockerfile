@@ -14,7 +14,7 @@ ENV TZ=Asia/Tokyo
 
 
 # Install nodejs
-RUN curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash - \
+RUN curl -fsSL https://deb.nodesource.com/setup_19.x | -E bash - \
 &&  apt install -y nodejs
 
 
