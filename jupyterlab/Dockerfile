@@ -6,11 +6,16 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt install -y \
     tzdata \
     build-essential \
+    curl \
 &&  ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime \
 &&  apt clean \
 &&  rm -rf /var/lib/apt/lists/*
-
 ENV TZ=Asia/Tokyo
+
+
+# Install nodejs
+RUN curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash - \
+&&  apt install -y nodejs
 
 
 # Regarding Jupyterlab extensions
