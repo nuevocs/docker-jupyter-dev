@@ -30,8 +30,8 @@ RUN python3 -m pip install --upgrade pip \
     jupyterlab_widgets \
     ipywidgets \
     import-ipynb \
-    jupyterlab-system-monitor \
-    jupyterlab_tabnine \
+    jupyterlab-system-monitor
+#    jupyterlab_tabnine
 
 # Default pip libraries you need
 RUN pip3 install --no-cache-dir \
