@@ -30,8 +30,9 @@ RUN python3 -m pip install --upgrade pip \
     jupyterlab_widgets \
     ipywidgets \
     import-ipynb \
-    jupyterlab-system-monitor
-#    jupyterlab_tabnine
+    jupyterlab-system-monitor \
+    jupyterthemes \
+    jupyterlab_tabnine
 
 # Default pip libraries you need
 RUN pip3 install --no-cache-dir \
@@ -66,5 +67,4 @@ RUN pip3 install -r /requirements.txt
 
 
 RUN jupyter labextension install \
-    @jupyterlab/toc \
-    @yeebc/jupyterlab_neon_theme
+    @jupyterlab/toc
