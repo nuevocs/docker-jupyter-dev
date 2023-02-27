@@ -34,8 +34,6 @@ RUN pip install --no-cache-dir \
     scikit-learn \
     pycaret \
     matplotlib \
-    japanize_matplotlib \
-    mlxtend \
     seaborn \
     plotly \
     requests \
@@ -43,10 +41,6 @@ RUN pip install --no-cache-dir \
     Pillow \
     bokeh \
     widgetsnbextension \
-    sqlalchemy \
-    statsmodels \
-    opencv-python
-
 
 # Additional packages
 RUN pip install --no-cache-dir \
