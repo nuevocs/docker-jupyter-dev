@@ -47,29 +47,20 @@ RUN pip3 install --no-cache-dir \
     seaborn \
     plotly \
     requests \
-    beautifulsoup4 \
     httpx \
     selectolax \
-    plotly \
-    PyMySQL \
-    SQLAlchemy \
-    tqdm \
-    tornado \
-    Pillow \
     bokeh \
     scipy \
     pycaret \
     sqlmodel
+#    beautifulsoup4 \
+#    PyMySQL \
+#    SQLAlchemy \
+#    tqdm \
+#    tornado \
+#    Pillow \
 
-# Additional packages
-#RUN pip install --no-cache-dir \
-#    pydeps \
-#    graphviz \
-#    pandas_profiling \
-#    shap \
-#    umap \
-#    xgboost \
-#    lightgbm
+
 
 # Furthermore dependencies
 COPY ./requirements.txt /requirements.txt
