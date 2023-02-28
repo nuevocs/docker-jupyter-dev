@@ -6,6 +6,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt install -y \
     tzdata \
     build-essential \
+    git \
     curl \
 &&  ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime \
 &&  apt clean \
@@ -30,8 +31,11 @@ RUN python3 -m pip install --upgrade pip \
     jupyterlab_widgets \
     ipywidgets \
     import-ipynb \
+    jupyter-resource-usage \
+    jupyterlab-topbar \
+    jupyterlab-topbar-text \
     jupyterlab-system-monitor \
-    jupyterthemes \
+    theme-darcula \
     jupyterlab_tabnine
 
 # Default pip libraries you need
@@ -67,4 +71,6 @@ RUN pip3 install -r /requirements.txt
 
 
 RUN jupyter labextension install \
-    @jupyterlab/toc
+    @jupyterlab/toc \
+    && jupyter lab build -y \
+    && jupyter lab clean -y
