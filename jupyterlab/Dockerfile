@@ -50,15 +50,18 @@ RUN pip3 install --no-cache-dir \
     httpx \
     selectolax \
     bokeh \
+    beautifulsoup4 \
+    PyMySQL \
+    SQLAlchemy \
+    tqdm \
+    tornado \
+    Pillow \
     sqlmodel
+
+
 #    scipy \
 #    pycaret \
-#    beautifulsoup4 \
-#    PyMySQL \
-#    SQLAlchemy \
-#    tqdm \
-#    tornado \
-#    Pillow \
+
 
 
 
