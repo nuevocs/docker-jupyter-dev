@@ -56,10 +56,10 @@ RUN pip3 install --no-cache-dir \
     tqdm \
     tornado \
     Pillow \
+    scipy \
     sqlmodel
 
 
-#    scipy \
 #    pycaret \
 
 
