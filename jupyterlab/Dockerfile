@@ -1,4 +1,4 @@
-FROM python:3.8.16-bullseye # This version is compatible with Pycaret
+FROM python:3.8.16-bullseye
 #FROM python:3.11.2-buster
 ARG DEBIAN_FRONTEND=noninteractive
 
