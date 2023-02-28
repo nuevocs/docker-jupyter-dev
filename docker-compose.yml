@@ -1,6 +1,7 @@
 version: "3"
 services:
   jupyterlab-docker:
+    container_name: jupyterlab-docker
     build:
       context: ./jupyterlab
       dockerfile: Dockerfile
