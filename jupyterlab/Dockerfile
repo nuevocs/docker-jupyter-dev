@@ -46,13 +46,20 @@ RUN pip3 install --no-cache-dir \
     matplotlib \
     seaborn \
     plotly \
-    requests
-#    scipy \
-#    pycaret \
-#    beautifulsoup4 \
-#    Pillow \
-#    bokeh \
-#    widgetsnbextension
+    requests \
+    beautifulsoup4 \
+    httpx \
+    selectolax \
+    plotly \
+    PyMySQL \
+    SQLAlchemy \
+    tqdm \
+    tornado \
+    Pillow \
+    bokeh \
+    scipy \
+    pycaret \
+    sqlmodel
 
 # Additional packages
 #RUN pip install --no-cache-dir \
