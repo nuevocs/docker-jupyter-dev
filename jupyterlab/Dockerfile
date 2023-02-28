@@ -50,9 +50,9 @@ RUN pip3 install --no-cache-dir \
     httpx \
     selectolax \
     bokeh \
-    scipy \
-    pycaret \
     sqlmodel
+#    scipy \
+#    pycaret \
 #    beautifulsoup4 \
 #    PyMySQL \
 #    SQLAlchemy \
