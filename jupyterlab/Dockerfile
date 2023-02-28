@@ -1,4 +1,5 @@
-FROM python:3.11.2-buster
+FROM python:3.8.16-bullseye # This version is compatible with Pycaret
+#FROM python:3.11.2-buster
 ARG DEBIAN_FRONTEND=noninteractive
 
 
@@ -57,12 +58,8 @@ RUN pip3 install --no-cache-dir \
     tornado \
     Pillow \
     scipy \
+    pycaret \
     sqlmodel
-
-
-#    pycaret \
-
-
 
 
 # Furthermore dependencies
