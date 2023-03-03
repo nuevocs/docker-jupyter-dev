@@ -15,13 +15,13 @@ services:
       --NotebookApp.token=''
       --notebook-dir=/workspace
     networks:
-      - nginxproxymanager_default
+      - default_network
     ports:
-      - 18888:8888
+      - ${PORTS}:8888
     volumes:
-      - /docker/docjup/jupyterlab/config:/root/.jupyter
-      - /docker/docjup/workspace:/workspace
+      - ${HOME_DIR}/jupyterlab/config:/root/.jupyter
+      - ${HOME_DIR}/workspace:/workspace
 
 networks:
-  nginxproxymanager_default:
+  default_network:
     external: true
