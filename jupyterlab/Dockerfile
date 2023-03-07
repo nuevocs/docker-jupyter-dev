@@ -33,10 +33,10 @@ RUN python3 -m pip install --upgrade pip \
     ipywidgets \
     import-ipynb \
     jupyter-resource-usage \
-    jupyterlab-topbar \
-    jupyterlab-topbar-text \
-    jupyterlab-system-monitor \
     theme-darcula
+#    jupyterlab-topbar \
+#    jupyterlab-topbar-text \
+#    jupyterlab-system-monitor \
 #    jupyterlab_tabnine
 
 # Default pip libraries you need
