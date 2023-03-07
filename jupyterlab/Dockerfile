@@ -36,8 +36,8 @@ RUN python3 -m pip install --upgrade pip \
     jupyterlab-topbar \
     jupyterlab-topbar-text \
     jupyterlab-system-monitor \
-    theme-darcula \
-    jupyterlab_tabnine
+    theme-darcula
+#    jupyterlab_tabnine
 
 # Default pip libraries you need
 RUN pip3 install --no-cache-dir \
