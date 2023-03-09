@@ -19,8 +19,8 @@ services:
     ports:
       - ${PORTS}:8888
     volumes:
-      - ${HOME_DIR}/jupyterlab/config:/root/.jupyter
-      - ${HOME_DIR}/workspace:/workspace
+      - ${PWD}/jupyterlab/config:/root/.jupyter
+      - ${PWD}/workspace:/workspace
 
 networks:
   default_network:
