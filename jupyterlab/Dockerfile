@@ -40,7 +40,7 @@ RUN python3 -m pip install --upgrade pip \
 #    jupyterlab_tabnine
 
 # Default pip libraries you need
-RUN pip3 install --no-cache-dir \
+RUN pip install --no-cache-dir \
     numpy \
     pandas \
     scikit-learn \
@@ -64,7 +64,7 @@ RUN pip3 install --no-cache-dir \
 
 # Furthermore dependencies
 COPY ./requirements.txt /requirements.txt
-RUN pip3 install -r /requirements.txt
+RUN pip install -r /requirements.txt
 
 
 
