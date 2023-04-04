@@ -44,6 +44,7 @@ RUN pip3 install --no-cache-dir \
     numpy \
     pandas \
     scikit-learn \
+    scipy \
     matplotlib \
     seaborn \
     plotly \
@@ -57,7 +58,6 @@ RUN pip3 install --no-cache-dir \
     tqdm \
     tornado \
     Pillow \
-    scipy \
     pycaret \
     sqlmodel
 
