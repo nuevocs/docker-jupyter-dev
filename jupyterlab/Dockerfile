@@ -58,8 +58,9 @@ RUN pip install --no-cache-dir \
     tqdm \
     tornado \
     Pillow \
-    pycaret \
     sqlmodel
+#    pycaret \
+
 
 
 # Furthermore dependencies
