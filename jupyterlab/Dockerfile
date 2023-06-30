@@ -9,7 +9,7 @@ RUN apt update && apt install -y \
     build-essential \
     git \
     curl \
-    #openjdk-18-jre \
+    openjdk-18-jre \
     #openjdk-18-jdk \
 &&  ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime \
 &&  apt clean \
