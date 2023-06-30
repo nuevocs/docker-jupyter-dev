@@ -89,7 +89,7 @@ RUN python -m jupyter nbextension install --py --user mitosheet
 RUN python -m jupyter nbextension enable --py --user mitosheet
 
 
-RUN jupyter labextension install \
-    @jupyterlab/toc \
-    && jupyter lab build -y \
-    && jupyter lab clean -y
+#RUN jupyter labextension install \
+#    @jupyterlab/toc \
+#    && jupyter lab build -y \
+#    && jupyter lab clean -y
