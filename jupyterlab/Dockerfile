@@ -17,7 +17,7 @@ ENV TZ=Asia/Tokyo
 
 
 # Install Java RE
-RUN apt install -y openjdk-11-jre-headless
+RUN apt install -y default-jdk
 
 
 # Install nodejs
