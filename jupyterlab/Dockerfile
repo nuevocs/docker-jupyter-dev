@@ -17,7 +17,7 @@ ENV TZ=Asia/Tokyo
 
 
 # Install Java RE
-RUN apt-get update && install default-jre
+RUN apt-get update && apt-get install -y default-jre
 
 
 # Install nodejs
