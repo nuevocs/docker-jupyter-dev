@@ -19,6 +19,9 @@ ENV TZ=Asia/Tokyo
 # Install Java RE
 RUN apt-get update && apt-get install -y default-jre
 
+# Install dependencies for camelot-py
+RUN apt install -y ghostscript python3-tk
+
 
 # Install nodejs
 # https://github.com/nodesource/distributions
@@ -67,7 +70,9 @@ RUN pip install --no-cache-dir \
     tornado \
     Pillow \
     sqlmodel \
-    tabula-py
+    tabula-py \
+    camelot-py \
+    opencv-python
 #    pycaret \
 
 # install google chrome
