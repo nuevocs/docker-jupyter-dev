@@ -14,8 +14,12 @@ RUN apt update && apt install -y \
 &&  rm -rf /var/lib/apt/lists/*
 ENV TZ=Asia/Tokyo
 
+RUN apt install --fix-missing
+
+#RUN sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+
 # Install Java RE
-RUN apt install -y openjdk-11-jre-headless
+RUN apt install -y default-jre
 
 
 # Install nodejs
