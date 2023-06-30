@@ -15,7 +15,7 @@ RUN apt update && apt install -y \
 ENV TZ=Asia/Tokyo
 
 # Install Java RE
-RUN apt install -y default-jre
+RUN apt install -y openjdk-11-jre-headless
 
 
 # Install nodejs
@@ -64,7 +64,8 @@ RUN pip install --no-cache-dir \
     tqdm \
     tornado \
     Pillow \
-    sqlmodel
+    sqlmodel \
+    tabula-py
 #    pycaret \
 
 # install google chrome
