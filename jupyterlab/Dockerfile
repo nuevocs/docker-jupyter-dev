@@ -71,8 +71,8 @@ RUN pip install --no-cache-dir \
     Pillow \
     sqlmodel \
     tabula-py \
-    camelot-py \
     opencv-python
+#    camelot-py \
 #    pycaret \
 
 # install google chrome
